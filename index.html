@@ -21,9 +21,9 @@
                 <a href="./index.html" lang="en" class="header-logo link"><span
                         class="header-logo-accent">Web</span>Studio</a>
                 <ul class="header-list">
-                    <li class="header-item"><a href="./" class="link">Студия</a></li>
-                    <li class="header-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li class="header-item"><a href="" class="link">Контакты</a></li>
+                    <li class="header-item"><a href="./" class="nav-link current link">Студия</a></li>
+                    <li class="header-item"><a href="./portfolio.html" class="nav-link link">Портфолио</a></li>
+                    <li class="header-item"><a href="" class="nav-link link">Контакты</a></li>
                 </ul>
 
                 <div class="contacts">
@@ -46,7 +46,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button type="button" class="hero-button">Заказать услугу</button>
+                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="advantage">
@@ -105,9 +105,9 @@
             <div class="container">
                 <h2 class="gallery-title">Чем мы занимаемся</h2>
                 <ul class="gallery-list">
-                    <li class="gallery-item"><img src="./images/img1.jpg" alt="Планшет" width="370"></li>
-                    <li class="gallery-item"><img src="./images/img2.jpg" alt="Ноутбук" width="370"></li>
-                    <li class="gallery-item"><img src="./images/img3.jpg" alt="Компьютер" width="370"></li>
+                    <li class="gallery-item"><div class="gallery-item-wrap"><img src="./images/img1.jpg" alt="Планшет" width="370"><p class="gallery-item-text">Десктопные приложения</p></div></li>
+                    <li class="gallery-item"><div class="gallery-item-wrap"><img src="./images/img2.jpg" alt="Ноутбук" width="370"><p class="gallery-item-text">Мобильные приложения</p></div></li>
+                    <li class="gallery-item"><div class="gallery-item-wrap"><img src="./images/img3.jpg" alt="Компьютер" width="370"><p class="gallery-item-text">Дизайнерские решения</p></div></li>
                 </ul>
             </div>
         </section>
@@ -281,7 +281,8 @@
                     <li class="adress-item"><a class="adress-link link" href="tel:+380991111111">+38 099 111 11 11</a>
                     </li>
                 </ul>
-            </address></div>
+            </address>
+        </div>
 
             <div class="footer-soc-block">
                 <h3 class="footer-soc-title">Присоединяйтесь</h3>
@@ -307,9 +308,55 @@
                         </a></li>
                 </ul>
             </div>
+            <div class="footer-form-block">
+                <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
+                <div class="footer-form">
+                <input type="mail" class="footer-form-mail" placeholder="E-mail">
+                <button type="submit" class="footer-form-btn">Подписаться <span class="icon-send"></span></button>
+                </div>
+            </div>
             </div>
         </div>
-    </footer>
+    </footer> 
+    <div class="backdrop is-hidden"  data-modal>
+        <div class="modal">
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <button class="modal-btn"  data-modal-close type="button"> <svg width="11px" height="11px">
+            <use href="./images/symbol-defs.svg#icon-cross"></use></button>
+      <form action="">
+        <div class="field-form">
+        <label for="input-login" class="label-name">Имя</label>
+       <input type="text" class="input-class" name="input-login" id="input-login">
+       <span class="icon"><svg width="18px" height="18px">
+        <use href="./images/symbol-defs.svg#icon-icon1"></use></span>
+        </div>
+        <div class="field-form">
+            <label for="input-tel" class="label-name">Телефон</label>
+            <input type="tel" class="input-class" name="tel" id="input-tel">
+            <span class="icon"><svg width="18px" height="18px">
+                    <use href="./images/symbol-defs.svg#icon-icon2"></use></span>
+        </div>
+        <div class="field-form">
+            <label for="input-mail" class="label-name">Почта</label>
+            <input type="mail" class="input-class" name="input-mail" id="input-mail">
+            <span class="icon"><svg width="18px" height="18px">
+                    <use href="./images/symbol-defs.svg#icon-icon3"></use></span>
+        </div>
+        <div class="field-form">
+            <label for="input-comment" class="label-name">Комментарий</label>
+            <textarea name="input-comment" id="input-comment" class="input-comment" placeholder="Введите текст"></textarea>
+        </div>
+        <div class="field-checkbox">
+            <label class="label-checkbox">
+                <input type="checkbox" name="input-checkbox" class="input-checkbox visually-hidden">
+                    <span class="custom-checkbox"></span> Соглашаюсь с рассылкой и принимаю <a href="" class="comment-link">Условия договора</a>
+                </label>
+        </div>
+        <button type="submit" class="form-btn">Отправить</button>
+        </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
