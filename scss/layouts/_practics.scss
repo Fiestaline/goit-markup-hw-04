@@ -1,0 +1,55 @@
+.gallery {
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-title,
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    padding-bottom: 50px;
+}
+
+.gallery-list,
+.advantage-list,
+.team-list {
+    width: 1170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gallery-item {
+    margin-right: 30px;
+}
+
+.gallery-item:last-child {
+    margin-right: 0;
+}
+
+.gallery-item-wrap {
+    position: relative;
+}
+
+
+.gallery-item-text {
+    width: 100%;
+    height: 70px;
+    padding: 27px 82px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}

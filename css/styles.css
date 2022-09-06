@@ -44,11 +44,7 @@ img {
 
 /* Main CSS */
 
-:root {
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196F3;
-}
+
 
 body {
     color: #000000;
@@ -81,6 +77,12 @@ ul {
 
 section {
     display: block;
+}
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
 }
 
 .visually-hidden {
@@ -734,15 +736,11 @@ section {
     padding-bottom: 94px;
 }
 
-.portfolio-title {}
-
 .portfolio-list {
     justify-content: center;
     display: flex;
     gap: 8px;
 }
-
-.portfolio-item {}
 
 .portfolio-btn {
     font-family: inherit;
