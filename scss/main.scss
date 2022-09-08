@@ -1,6 +1,6 @@
 @import './base/reset';
 @import './base/common';
-@import './base/footer';
+
 
 @import './utils/vars';
 @import './utils/hidden';
@@ -13,4 +13,8 @@
 @import './layouts/clients';
 @import './layouts/work-list';
 @import './layouts/portfolio';
-@import './layouts/advantage';
+
+
+@import './base/footer';
+
+@import './components/modal';

@@ -11,7 +11,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <li nk rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -19,23 +18,24 @@
     <header class="header">
         <div class="container">
             <nav class="header-nav">
-                <a href="./index.html" lang="en" class="header-logo link"><span
-                        class="header-logo-accent">Web</span>Studio</a>
-                <ul class="header-list">
-                    <li class="header-item"><a href="./" class="nav-link current link">Студия</a></li>
-                    <li class="header-item"><a href="./portfolio.html" class="nav-link link">Портфолио</a></li>
-                    <li class="header-item"><a href="" class="nav-link link">Контакты</a></li>
+                <a href="./index.html" lang="en" class="logo link"><span
+                        class="logo__accent">Web</span>Studio</a>
+                <ul class="header-nav__list">
+                    <li class="header-nav__item"><a href="./" class="header-nav__link current link">Студия</a></li>
+                    <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link link">Портфолио</a></li>
+                    <li class="header-nav__item"><a href="" class="header-nav__link link">Контакты</a></li>
+                  
                 </ul>
 
                 <div class="contacts">
                     
-                   <a class="header-mail link" href="mailto:info@devstudio.com">
-                      <svg class="header-mail-icon" width="16" height="12">
+                   <a class="contacts__mail link" href="mailto:info@devstudio.com">
+                      <svg class="contacts__mail-icon" width="16" height="12">
                         <use href="./images/symbol-defs.svg#icon-envelope"></use>
                       </svg> 
                         info@devstudio.com</a>
-                    <a class="header-tel link" href="tel:+380961111111">
-                        <svg class="header-mail-icon" width="10" height="16">
+                    <a class="contacts__tel link" href="tel:+380961111111">
+                        <svg class="contacts__mail-icon" width="10" height="16">
                             <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11</a>
@@ -46,56 +46,56 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+                <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
+                <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="advantage">
             <div class="container">
-                <h2 class="advantage-title visually-hidden">Наши преимущества</h2>
-                <ul class="advantage-list">
-                    <li class="advantage-item">
-                        <div class="advantage-item-thumb">
-<svg class="advantage-item-icon" width="70" height="70">
+                <h2 class="advantage__title visually-hidden">Наши преимущества</h2>
+                <ul class="advantage__list">
+                    <li class="advantage__item">
+                        <div class="advantage__item-thumb">
+<svg class="advantage__item-icon" width="70" height="70">
     <use href="./images/symbol-defs.svg#icon-antenna"></use>
 </svg>
 
                         </div>
-                        <h3 class="advantage-list-title">Внимание к деталям</h3>
-                        <p class="advantage-list-text">Идейные соображения, а также начало повседневной работы по
+                        <h3 class="advantage__list-title">Внимание к деталям</h3>
+                        <p class="advantage__list-text">Идейные соображения, а также начало повседневной работы по
                             формированию позиции.</p>
                     </li>
-                    <li class="advantage-item">
-                        <div class="advantage-item-thumb">
-                            <svg class="advantage-item-icon" width="70" height="70">
+                    <li class="advantage__item">
+                        <div class="advantage__item-thumb">
+                            <svg class="advantage__item-icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-clock"></use>
                             </svg>
                         
                         </div>
-                        <h3 class="advantage-list-title">Пунктуальность</h3>
-                        <p class="advantage-list-text">Задача организации, в особенности же рамки и место обучения
+                        <h3 class="advantage__list-title">Пунктуальность</h3>
+                        <p class="advantage__list-text">Задача организации, в особенности же рамки и место обучения
                             кадров влечет за собой.</p>
                     </li>
-                    <li class="advantage-item">
-                        <div class="advantage-item-thumb">
-                            <svg class="advantage-item-icon" width="70" height="70">
+                    <li class="advantage__item">
+                        <div class="advantage__item-thumb">
+                            <svg class="advantage__item-icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-diagram"></use>
                             </svg>
                         
                         </div>
-                        <h3 class="advantage-list-title">Планирование</h3>
-                        <p class="advantage-list-text">Равным образом консультация с широким активом в значительной
+                        <h3 class="advantage__list-title">Планирование</h3>
+                        <p class="advantage__list-text">Равным образом консультация с широким активом в значительной
                             степени обуславливает.</p>
                     </li>
-                    <li class="advantage-item">
-                        <div class="advantage-item-thumb">
-                            <svg class="advantage-item-icon" width="70" height="70">
+                    <li class="advantage__item">
+                        <div class="advantage__item-thumb">
+                            <svg class="advantage__item-icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                             </svg>
                         
                         </div>
-                        <h3 class="advantage-list-title">Современные технологии</h3>
-                        <p class="advantage-list-text">Значимость этих проблем настолько очевидна, что реализация
+                        <h3 class="advantage__list-title">Современные технологии</h3>
+                        <p class="advantage__list-text">Значимость этих проблем настолько очевидна, что реализация
                             плановых заданий. </p>
                     </li>
                 </ul>

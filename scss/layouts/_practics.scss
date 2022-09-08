@@ -2,10 +2,8 @@
     padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
-}
 
-.gallery-title,
-.team-title {
+    &-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -15,29 +13,26 @@
     padding-bottom: 50px;
 }
 
-.gallery-list,
-.advantage-list,
-.team-list {
+&-list {
     width: 1170px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.gallery-item {
+&-item {
     margin-right: 30px;
 }
 
-.gallery-item:last-child {
+&-item:last-child {
     margin-right: 0;
 }
 
-.gallery-item-wrap {
+&-item-wrap {
     position: relative;
 }
 
-
-.gallery-item-text {
+&-item-text {
     width: 100%;
     height: 70px;
     padding: 27px 82px;
@@ -50,6 +45,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: #FFFFFF;
 }
+}
+
