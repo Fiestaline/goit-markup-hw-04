@@ -1,7 +1,5 @@
 .header {
-    background: #FFFFFF;
-
-  
+    background: #FFFFFF;  
 }
 
 .logo {
@@ -10,7 +8,19 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    margin-right: 93px;
+    margin-right: 0;
+
+    @media screen and (min-width: 480px) {
+        margin-right: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
 
     &__accent {
         color: var(--accent-color);
@@ -19,14 +29,48 @@
 
 
 
+.header-nav__mobile-btn {
+    
+    background-color: #FFFFFF;
+    border: none;
+    padding: 0;
+    margin-left: auto;
+
+    @media screen and (min-width: 480px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+    
+}
+
 .header-nav {
     height: 80px;
     display: flex;
     align-items: center;
 
     &__list {
-        display: flex;
+        
         gap: 50px;
+        display: none;
+
+        @media screen and (min-width: 480px) {
+            display: none;
+        }
+    
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
     } 
 
     &__link {
@@ -37,6 +81,7 @@
         color: var(--title-text-color);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
+        
     }
     
     &__link::after {
@@ -75,8 +120,30 @@
 
 
 .contacts {
-    display: flex;
+    
+    display: none;
     margin-left: auto;
+    
+    
+
+        @media screen and (min-width: 480px) {
+            display: none;
+        }
+    
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+           
+           
+            
+        }
 
     &__mail {
         display: flex;
@@ -88,7 +155,6 @@
     &__tel {
         display: flex;
         align-items: center;
-        margin-left: 50px;
         color: var(--primary-text-color);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -107,6 +173,9 @@
         fill: var(--accent-color)
     }
 }
+
+
+
 
 
 
